@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Gruppo&family=Kaushan+Script&family=Poppins:wght@200;300;400;500;600&family=Splash&family=Tangerine&display=swap');
+body{   
+    background: linear-gradient(to left,rgb(0,97,255),rgb(96,239,255));
+    margin: 1.5em;   
+    padding: 0;
+}
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.l_container{
+    width: 60%;
+    transform: translate(25%,15%);   
+}
+.left_side {
+    width: 50%;
+    background-color: rgb(32, 43, 59);
+    padding: 20px;
+    border-radius: 24px;
+    text-align: center;
+    margin: 20px;
+}
+.left_side img{
+    border-radius: 24px;
+    box-shadow: 0px 4px 10px rgb(255, 0, 0),
+                0px 4px 10px rgb(0, 217, 255),
+                0px 4px 10px rgb(255, 174, 0),
+                inset 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+.img1{
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.img1:hover{
+    transform: translateX(10%);
+}
+.r_container{
+    width: 40%;
+}
+.r_container .right_side{
+    padding: 20px;
+    margin: 20px;
+    transform: translateY(30%);
+    text-align: center;
+}
+.right_side h1{
+    color: #001F3F;
+    font-weight: 550;
+    letter-spacing: 1px;
+    font-family:'Kaushan Script';
+    position: relative;
+    display: inline-block;
+}
+.r_container .right_side h1::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #ff5733;
+    border-left: 5px solid #ff5733;
+    bottom: -12px;
+    left: -12px;
+}
+.r_container .right_side h1::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid #ff5733;
+    border-right: 5px solid #ff5733;
+    top: -12px;
+    right: -12px;
+}
+.right_side span{
+    display: flex;
+    flex-direction: column;
+    font-size:medium;
+    font-family: 'Lucida Sans';
+    color: #FFFFFF;
+}
+.right_side .button{
+    background-color: #3498db;
+    color: #001F3F;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Lucida Sans';
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+.right_side .button:hover{
+    background-color: rgb(96,239,255);
+}
+
+@media screen and (max-width:800px){
+    .img1,.container {
+        position: relative;
+        width: 100%;
+        top: initial;
+    }    
+}
+@media screen and (max-width:500px){
+    html{
+        font-size: 12px;
+    }    
+}

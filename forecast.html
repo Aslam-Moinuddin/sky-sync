@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sky Sync</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="forecast-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="container">
+        <h2 class="brand">Sky Sync</h2>
+        <div>
+          <h1 class="temp">16&#176</h1>
+          <div class="city-time">
+            <h1 class="name">London</h1>
+            <small>
+              <span class="time">06:09</span>-
+              <span class="date">Monday Sep 19</span>
+            </small>
+          </div>
+          <div class="weather">
+            <img src="icons/day/113.png" class="icon" alt="icon" width="50" height="50">
+            <span class="condition">Cloudy</span>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <form id="LocationInput">
+          <input type="text" class="search" placeholder="Search Location">
+          <button type="submit" class="submit"><i class="fa fa-search"></i>
+          </button>
+        </form>
+        <ul class="cities">
+          <li class="city">London</li>
+          <li class="city">Alaska</li>
+          <li class="city">Kuwait</li>
+          <li class="city">Tokyo</li>
+        </ul>
+        <ul class="details">
+          <h4>Weather Details</h4>
+          <li>
+            <span>Cloudy</span>
+            <span class="cloud">89%</span>
+          </li>
+          <li>
+            <span>Humidity</span>
+            <span class="humidity">64%</span>
+          </li>
+          <li>
+            <span>Wind</span>
+            <span class="wind">8km/h</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="forecast-script.js"></script>
+  </body>
+</html>
